@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <h1 class="h1">Click on the Toggle Button</h1>
+    <script>
+        let btn1=document.getElementById("btn1");
+        let btn2=document.querySelector("#btn2");
+        let body=document.querySelector("body");
+        let h1=document.querySelector('.h1');
+         btn1.addEventListener('click',()=>{
+            body.style.backgroundColor="#FFFFFF";
+            h1.style.color="#000000";
+         })
+         btn2.addEventListener('click',()=>{
+            body.style.backgroundColor="#000000";
+            h1.style.color="#FFFFFF";
+         })
+    </script>
+</body>
+</html>
